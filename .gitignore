@@ -1,0 +1,36 @@
+# Local notes and drafts
+.ai/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test / cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Cached HTML scrapes (large, reproducible)
+data/raw/mathcomp_html/
