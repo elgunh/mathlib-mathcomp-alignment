@@ -1,0 +1,308 @@
+{
+  "synonym_map": {
+    "ssr": [
+      "ssreflect"
+    ],
+    "ssrnat": [
+      "natural",
+      "nat",
+      "arithmetic",
+      "number"
+    ],
+    "ssralg": [
+      "algebra",
+      "ring",
+      "algebraic",
+      "algebraicstructure"
+    ],
+    "ssrint": [
+      "integer",
+      "int"
+    ],
+    "ssrfun": [
+      "function",
+      "basicfunctions"
+    ],
+    "ssrbool": [
+      "bool",
+      "boolean",
+      "decidable"
+    ],
+    "ssrnum": [
+      "numeric",
+      "ordered",
+      "archimedean",
+      "number"
+    ],
+    "mx": [
+      "matrix"
+    ],
+    "mxalgebra": [
+      "matrix",
+      "algebra",
+      "rank",
+      "rowspace",
+      "linearalgebra"
+    ],
+    "mxpoly": [
+      "matrix",
+      "polynomial",
+      "charpoly",
+      "minimal"
+    ],
+    "mxrepresentation": [
+      "matrix",
+      "representation",
+      "module"
+    ],
+    "bigop": [
+      "bigoperators",
+      "operator",
+      "finset",
+      "sum",
+      "product"
+    ],
+    "fingroup": [
+      "finite",
+      "group",
+      "finitegroup"
+    ],
+    "fintype": [
+      "finite",
+      "type",
+      "finitetype"
+    ],
+    "finset": [
+      "finite",
+      "set",
+      "finset"
+    ],
+    "finfun": [
+      "finite",
+      "function",
+      "pifin"
+    ],
+    "fingraph": [
+      "finite",
+      "graph",
+      "simplegraph"
+    ],
+    "finfield": [
+      "finite",
+      "field",
+      "galoisfield"
+    ],
+    "eqtype": [
+      "equality",
+      "decidable",
+      "equiv",
+      "subtype"
+    ],
+    "choice": [
+      "choice",
+      "classical",
+      "zorn",
+      "axiomofchoice"
+    ],
+    "zmodp": [
+      "zmod",
+      "modular",
+      "quotient",
+      "integers",
+      "integers_mod"
+    ],
+    "zmod": [
+      "modular",
+      "quotient",
+      "integers"
+    ],
+    "alg": [
+      "algebra"
+    ],
+    "nat": [
+      "natural",
+      "number"
+    ],
+    "int": [
+      "integer"
+    ],
+    "rat": [
+      "rational"
+    ],
+    "poly": [
+      "polynomial"
+    ],
+    "fin": [
+      "finite"
+    ],
+    "perm": [
+      "permutation"
+    ],
+    "quot": [
+      "quotient"
+    ],
+    "comm": [
+      "commutator",
+      "commutative"
+    ],
+    "seq": [
+      "sequence",
+      "list"
+    ],
+    "eq": [
+      "equality",
+      "equiv"
+    ],
+    "repr": [
+      "representation"
+    ],
+    "char": [
+      "character",
+      "charpoly"
+    ],
+    "cyc": [
+      "cyclic"
+    ],
+    "aut": [
+      "automorphism"
+    ],
+    "hom": [
+      "homomorphism"
+    ],
+    "iso": [
+      "isomorphism"
+    ],
+    "grp": [
+      "group"
+    ],
+    "ord": [
+      "order"
+    ],
+    "arith": [
+      "arithmetic"
+    ],
+    "num": [
+      "number",
+      "numeric"
+    ],
+    "op": [
+      "operator"
+    ],
+    "div": [
+      "divisibility",
+      "division"
+    ],
+    "gcd": [
+      "greatestcommondivisor",
+      "divisibility"
+    ],
+    "lcm": [
+      "leastcommonmultiple"
+    ],
+    "exp": [
+      "exponentiation",
+      "power"
+    ],
+    "mod": [
+      "modular",
+      "modulo"
+    ],
+    "abs": [
+      "absolute",
+      "norm"
+    ],
+    "trunc": [
+      "truncation"
+    ],
+    "lim": [
+      "limit",
+      "convergence"
+    ],
+    "top": [
+      "topology",
+      "topological"
+    ],
+    "bij": [
+      "bijective",
+      "bijection"
+    ],
+    "inj": [
+      "injective",
+      "injection"
+    ],
+    "surj": [
+      "surjective",
+      "surjection"
+    ],
+    "pred": [
+      "predicate"
+    ],
+    "rel": [
+      "relation"
+    ]
+  },
+  "module_level_extra": {
+    "burnside_app": [
+      "burnside",
+      "groupaction",
+      "orbit",
+      "stabilizer",
+      "coloring"
+    ],
+    "commutator": [
+      "commutator",
+      "hallwitt",
+      "derivedsubgroup"
+    ],
+    "jordanholder": [
+      "jordanholder",
+      "compositionseries",
+      "subnormal"
+    ],
+    "gseries": [
+      "subnormal",
+      "series",
+      "filtration"
+    ],
+    "mxrepresentation": [
+      "linearrepresentation",
+      "maschke",
+      "semisimple"
+    ],
+    "vcharacter": [
+      "virtualcharacter",
+      "character",
+      "frobenius"
+    ],
+    "classfun": [
+      "classfunction",
+      "conjugacy",
+      "character"
+    ],
+    "alt": [
+      "alternating",
+      "evenpermutation"
+    ],
+    "gproduct": [
+      "semidirect",
+      "product",
+      "directproduct"
+    ],
+    "presentation": [
+      "presentedgroup",
+      "generator",
+      "relation",
+      "freegroup"
+    ],
+    "zmodp": [
+      "zmod",
+      "integers_mod",
+      "cyclicgroup"
+    ],
+    "ssrAC": [
+      "associative",
+      "commutative",
+      "rewriting"
+    ]
+  }
+}

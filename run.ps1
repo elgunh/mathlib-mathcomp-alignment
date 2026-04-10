@@ -22,4 +22,20 @@ Write-Host "=== Step 5: Iterative graph-propagation alignment ==="
 python src/iterative_alignment.py
 python src/visualize_iterations.py
 
+Write-Host "=== Step 6: Deliverable 3 — docstring-enhanced alignment ==="
+python src/scrape_mathlib_docs.py
+python src/text_similarity_v2.py
+python src/compare_text_signals.py
+python src/iterative_alignment_v3.py
+python src/visualize_v3.py
+python .ai/evaluate_v3.py
+
+Write-Host "=== Step 7: Deliverable 3.2 — synonym-aware text and reranking ==="
+python src/build_synonym_map.py
+python src/text_similarity_v3.py
+python src/iterative_alignment_v3.py --text_sim data/processed/text_sim_v3.npz --out_matches outputs/iterative_matches_v3_textv3.csv --out_log outputs/propagation_log_v3_textv3.csv
+python src/rerank_candidates_v3.py
+python src/visualize_v3_2.py
+python .ai/evaluate_v3_2.py
+
 Write-Host "=== Done! Check outputs/ ==="

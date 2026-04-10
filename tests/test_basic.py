@@ -157,3 +157,94 @@ def test_iterative_improves_over_baseline():
     assert d2_high >= d1_high, (
         f"D2 should have >= D1 high-confidence matches: D2={d2_high}, D1={d1_high}"
     )
+
+
+# ---- Deliverable 3 tests ----
+
+def test_mathlib_docstrings():
+    path = os.path.join(DATA_DIR, "mathlib_docstrings.csv")
+    assert os.path.exists(path), f"Missing {path}"
+    df = pd.read_csv(path)
+    assert len(df) == 7661, f"Expected 7661 rows, got {len(df)}"
+    required_cols = {"module_name", "docstring", "declaration_names",
+                     "docstring_length", "declaration_count", "fetch_status"}
+    assert required_cols.issubset(set(df.columns))
+    n_ok = (df["fetch_status"].isin(["ok", "cached"])).sum()
+    assert n_ok >= 6000, f"Expected >=6000 fetched, got {n_ok}"
+
+
+def test_text_sim_v2():
+    path = os.path.join(DATA_DIR, "text_sim_v2.npz")
+    assert os.path.exists(path), f"Missing {path}"
+    mat = sparse.load_npz(path)
+    assert mat.shape == (106, 7661), f"Expected (106, 7661), got {mat.shape}"
+    assert mat.max() <= 1.0 + 1e-6
+
+
+def test_iterative_matches_v3():
+    path = os.path.join(OUTPUT_DIR, "iterative_matches_v3.csv")
+    assert os.path.exists(path), f"Missing {path}"
+    df = pd.read_csv(path)
+    assert len(df) == 1060, f"Expected 1060 rows, got {len(df)}"
+    required_cols = {"mathcomp_module", "base_score", "propagation_bonus",
+                     "final_score", "anchor_round", "confidence_tier", "rank"}
+    assert required_cols.issubset(set(df.columns))
+    top1 = df[df["rank"] == 1]
+    assert len(top1) == 106
+
+
+def test_d3_figures():
+    fig_dir = os.path.join(OUTPUT_DIR, "figures")
+    expected = ["d1_d2_d3_comparison.png", "text_signal_scatter.png",
+                "docstring_coverage.png", "rank_improvement.png"]
+    for name in expected:
+        path = os.path.join(fig_dir, name)
+        assert os.path.exists(path), f"Missing figure {path}"
+        assert os.path.getsize(path) > 1000, f"{name} is too small"
+
+
+def test_d3_summary():
+    path = os.path.join(OUTPUT_DIR, "deliverable_3_summary.md")
+    assert os.path.exists(path), f"Missing {path}"
+    content = open(path, encoding="utf-8").read()
+    assert "P@1" in content
+    assert "P@5" in content
+    assert len(content) > 2000
+
+
+def test_text_sim_v3():
+    path = os.path.join("data", "processed", "text_sim_v3.npz")
+    assert os.path.exists(path), f"Missing {path}"
+    from scipy import sparse
+    m = sparse.load_npz(path)
+    assert m.shape == (106, 7661), f"Expected (106,7661), got {m.shape}"
+
+
+def test_iterative_matches_v3_reranked():
+    path = os.path.join(OUTPUT_DIR, "iterative_matches_v3_reranked.csv")
+    assert os.path.exists(path), f"Missing {path}"
+    df = pd.read_csv(path)
+    assert len(df) == 1060, f"Expected 1060 rows, got {len(df)}"
+    assert "reranked_score" in df.columns
+    top1 = df[df["rank"] == 1]
+    assert len(top1) == 106
+
+
+def test_d32_figures():
+    fig_dir = os.path.join(OUTPUT_DIR, "figures")
+    expected = ["d3_vs_d3_2_comparison.png", "hard_case_rank_changes.png",
+                "synonym_impact.png", "token_source_contribution.png"]
+    for name in expected:
+        path = os.path.join(fig_dir, name)
+        assert os.path.exists(path), f"Missing figure {path}"
+        assert os.path.getsize(path) > 1000, f"{name} is too small"
+
+
+def test_d32_summary():
+    path = os.path.join(OUTPUT_DIR, "deliverable_3_2_summary.md")
+    assert os.path.exists(path), f"Missing {path}"
+    content = open(path, encoding="utf-8").read()
+    assert "P@1" in content
+    assert "synonym" in content.lower()
+    assert "rerank" in content.lower()
+    assert len(content) > 3000

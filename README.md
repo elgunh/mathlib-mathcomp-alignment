@@ -13,6 +13,17 @@ category/cluster alignment, and import-graph neighbourhood overlap.
 matches (text-only signals) are anchored first, then their graph neighbourhoods
 are used to discover and verify additional alignments over multiple rounds.
 
+**Deliverable 3** replaces the path-token Mathlib text proxy with real semantic
+content scraped from Lean source files on GitHub (module docstrings and
+declaration names). The identical D2 pipeline is re-run as a controlled
+experiment, and improvements are measured on the 62-pair gold standard.
+
+**Deliverable 3.2** addresses two remaining failure modes — vocabulary mismatch
+and semantic-overlap drift — through a synonym-aware text model for SSReflect
+abbreviations and a lightweight interpretable reranker that awards a concept-match
+bonus when the Mathlib candidate path contains the MathComp concept word.
+D3.2 achieves P@1 = 71.0% (44/62), surpassing D2's 67.7%.
+
 ## Quick Start
 
 ```bash
@@ -36,6 +47,9 @@ bash run.sh
 | 5. Visualize  | `src/visualize.py`                                                                                          | `outputs/figures/*.png`                                         |
 | 6. Iterative  | `src/iterative_alignment.py`                                                                                | `outputs/iterative_matches.csv`, `outputs/propagation_log.csv`  |
 | 7. Iter. Viz  | `src/visualize_iterations.py`                                                                               | `outputs/figures/convergence.png`, `outputs/figures/before_after.png` |
+| 8. Scrape docs | `src/scrape_mathlib_docs.py`                                                                               | `data/processed/mathlib_docstrings.csv` |
+| 9. Text v2    | `src/text_similarity_v2.py`                                                                                 | `data/processed/text_sim_v2.npz` |
+| 10. D3 align  | `src/iterative_alignment_v3.py`, `src/compare_text_signals.py`, `src/visualize_v3.py`, `.ai/evaluate_v3.py` | `outputs/iterative_matches_v3.csv`, `outputs/deliverable_3_summary.md` |
 
 ## Data Sources
 

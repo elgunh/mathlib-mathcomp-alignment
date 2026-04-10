@@ -34,3 +34,6 @@ htmlcov/
 
 # Cached HTML scrapes (large, reproducible)
 data/raw/mathcomp_html/
+
+# Cached Lean source files (large, reproducible)
+data/raw/mathlib_lean_cache/
