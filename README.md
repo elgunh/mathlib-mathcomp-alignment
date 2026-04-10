@@ -9,6 +9,10 @@ For each (MathComp module, Mathlib module) pair, computes a similarity score
 in [0, 1] combining four signals: name similarity, text similarity,
 category/cluster alignment, and import-graph neighbourhood overlap.
 
+**Deliverable 2** adds an iterative graph-propagation step: high-confidence
+matches (text-only signals) are anchored first, then their graph neighbourhoods
+are used to discover and verify additional alignments over multiple rounds.
+
 ## Quick Start
 
 ```bash
@@ -30,6 +34,8 @@ bash run.sh
 | 3. Similarity | `src/name_similarity.py`, `src/text_similarity.py`, `src/category_similarity.py`, `src/graph_similarity.py` | `data/processed/*_sim.npz`                                      |
 | 4. Combine    | `src/combine_signals.py`                                                                                    | `outputs/candidate_matches.csv`, `outputs/alignment_matrix.npz` |
 | 5. Visualize  | `src/visualize.py`                                                                                          | `outputs/figures/*.png`                                         |
+| 6. Iterative  | `src/iterative_alignment.py`                                                                                | `outputs/iterative_matches.csv`, `outputs/propagation_log.csv`  |
+| 7. Iter. Viz  | `src/visualize_iterations.py`                                                                               | `outputs/figures/convergence.png`, `outputs/figures/before_after.png` |
 
 ## Data Sources
 

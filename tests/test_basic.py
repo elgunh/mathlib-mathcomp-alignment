@@ -112,3 +112,48 @@ def test_known_good_matches():
             f"Expected '{ml_keyword}' in top-10 for '{mc_mod}', "
             f"got: {list(subset['mathlib_module'])}"
         )
+
+
+# ---- Deliverable 2 tests ----
+
+def test_iterative_matches():
+    path = os.path.join(OUTPUT_DIR, "iterative_matches.csv")
+    assert os.path.exists(path), f"Missing {path}"
+    df = pd.read_csv(path)
+    assert len(df) == 1060, f"Expected 1060 rows, got {len(df)}"
+    required_cols = {"mathcomp_module", "base_score", "propagation_bonus",
+                     "final_score", "anchor_round", "confidence_tier", "rank"}
+    assert required_cols.issubset(set(df.columns)), f"Missing columns: {required_cols - set(df.columns)}"
+    top1 = df[df["rank"] == 1]
+    assert len(top1) == 106
+
+
+def test_propagation_log():
+    path = os.path.join(OUTPUT_DIR, "propagation_log.csv")
+    assert os.path.exists(path), f"Missing {path}"
+    df = pd.read_csv(path)
+    assert len(df) >= 1, "Log should have at least round 0"
+    assert df.iloc[0]["round"] == 0
+    assert df["total_anchors"].is_monotonic_increasing
+
+
+def test_iterative_figures():
+    fig_dir = os.path.join(OUTPUT_DIR, "figures")
+    expected = ["convergence.png", "before_after.png", "tier_breakdown.png"]
+    for name in expected:
+        path = os.path.join(fig_dir, name)
+        assert os.path.exists(path), f"Missing figure {path}"
+        assert os.path.getsize(path) > 1000, f"{name} is too small"
+
+
+def test_iterative_improves_over_baseline():
+    """Iterative alignment should anchor at least as many modules as D1."""
+    d1 = pd.read_csv(os.path.join(OUTPUT_DIR, "candidate_matches.csv"))
+    d2 = pd.read_csv(os.path.join(OUTPUT_DIR, "iterative_matches.csv"))
+    top1_d1 = d1[d1["rank"] == 1]
+    top1_d2 = d2[d2["rank"] == 1]
+    d1_high = (top1_d1["combined_score"] >= 0.30).sum()
+    d2_high = (top1_d2["final_score"] >= 0.30).sum()
+    assert d2_high >= d1_high, (
+        f"D2 should have >= D1 high-confidence matches: D2={d2_high}, D1={d1_high}"
+    )

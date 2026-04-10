@@ -18,4 +18,8 @@ echo "=== Step 4: Combine and produce outputs ==="
 python src/combine_signals.py
 python src/visualize.py
 
+echo "=== Step 5: Iterative graph-propagation alignment ==="
+python src/iterative_alignment.py
+python src/visualize_iterations.py
+
 echo "=== Done! Check outputs/ ==="
