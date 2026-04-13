@@ -1,0 +1,509 @@
+{
+  "gold_v1": {
+    "sylow": [
+      "Mathlib.GroupTheory.Sylow"
+    ],
+    "nilpotent": [
+      "Mathlib.GroupTheory.Nilpotent"
+    ],
+    "cyclic": [
+      "Mathlib.GroupTheory.SpecificGroups.Cyclic"
+    ],
+    "perm": [
+      "Mathlib.GroupTheory.Perm"
+    ],
+    "abelian": [
+      "Mathlib.GroupTheory.Abelianization",
+      "Mathlib.GroupTheory.AbelianGroup"
+    ],
+    "commutator": [
+      "Mathlib.GroupTheory.Commutator"
+    ],
+    "center": [
+      "Mathlib.GroupTheory.Subgroup.Center"
+    ],
+    "quotient": [
+      "Mathlib.GroupTheory.QuotientGroup",
+      "Mathlib.GroupTheory.Coset"
+    ],
+    "action": [
+      "Mathlib.GroupTheory.GroupAction"
+    ],
+    "fingroup": [
+      "Mathlib.GroupTheory"
+    ],
+    "morphism": [
+      "Mathlib.GroupTheory.GroupHom",
+      "Mathlib.GroupTheory.Subgroup"
+    ],
+    "automorphism": [
+      "Mathlib.GroupTheory.Aut",
+      "Mathlib.GroupTheory.Subgroup"
+    ],
+    "pgroup": [
+      "Mathlib.GroupTheory.PGroup"
+    ],
+    "gproduct": [
+      "Mathlib.GroupTheory.SemidirectProduct",
+      "Mathlib.GroupTheory.DirectProduct"
+    ],
+    "gseries": [
+      "Mathlib.GroupTheory.Subgroup",
+      "Mathlib.GroupTheory.Series"
+    ],
+    "hall": [
+      "Mathlib.GroupTheory.Complement",
+      "Mathlib.GroupTheory.Solvable"
+    ],
+    "alt": [
+      "Mathlib.GroupTheory.SpecificGroups.Alternating"
+    ],
+    "presentation": [
+      "Mathlib.GroupTheory.PresentedGroup",
+      "Mathlib.GroupTheory.FreeGroup"
+    ],
+    "jordanholder": [
+      "Mathlib.Order.JordanHolder",
+      "Mathlib.GroupTheory.CompositionSeries"
+    ],
+    "burnside_app": [
+      "Mathlib.GroupTheory.GroupAction",
+      "Mathlib.GroupTheory.Burnside"
+    ],
+    "ssralg": [
+      "Mathlib.Algebra.Ring",
+      "Mathlib.Algebra.Group"
+    ],
+    "matrix": [
+      "Mathlib.LinearAlgebra.Matrix"
+    ],
+    "poly": [
+      "Mathlib.RingTheory.Polynomial",
+      "Mathlib.Algebra.Polynomial"
+    ],
+    "ring_quotient": [
+      "Mathlib.RingTheory.Ideal.Quotient"
+    ],
+    "intdiv": [
+      "Mathlib.Data.Int.Div",
+      "Mathlib.Data.Int"
+    ],
+    "bigop": [
+      "Mathlib.Algebra.BigOperators"
+    ],
+    "ssrnat": [
+      "Mathlib.Data.Nat"
+    ],
+    "ssrint": [
+      "Mathlib.Data.Int"
+    ],
+    "rat": [
+      "Mathlib.Data.Rat"
+    ],
+    "prime": [
+      "Mathlib.Data.Nat.Prime"
+    ],
+    "zmodp": [
+      "Mathlib.Data.ZMod"
+    ],
+    "fraction": [
+      "Mathlib.RingTheory.Localization.FractionRing"
+    ],
+    "binomial": [
+      "Mathlib.Data.Nat.Choose"
+    ],
+    "mxpoly": [
+      "Mathlib.LinearAlgebra.Matrix.Polynomial",
+      "Mathlib.LinearAlgebra.Matrix.Charpoly"
+    ],
+    "mxalgebra": [
+      "Mathlib.LinearAlgebra.Matrix"
+    ],
+    "vector": [
+      "Mathlib.LinearAlgebra"
+    ],
+    "sesquilinear": [
+      "Mathlib.LinearAlgebra.SesquilinearForm"
+    ],
+    "mxrepresentation": [
+      "Mathlib.RepresentationTheory"
+    ],
+    "character": [
+      "Mathlib.RepresentationTheory.Character"
+    ],
+    "vcharacter": [
+      "Mathlib.RepresentationTheory.Character"
+    ],
+    "separable": [
+      "Mathlib.FieldTheory.Separable"
+    ],
+    "galois": [
+      "Mathlib.FieldTheory.Galois",
+      "Mathlib.FieldTheory.Finite.GaloisField"
+    ],
+    "algC": [
+      "Mathlib.FieldTheory.IsAlgClosed"
+    ],
+    "cyclotomic": [
+      "Mathlib.NumberTheory.Cyclotomic",
+      "Mathlib.RingTheory.Polynomial.Cyclotomic"
+    ],
+    "fieldext": [
+      "Mathlib.FieldTheory.Extension"
+    ],
+    "finfield": [
+      "Mathlib.FieldTheory.Finite",
+      "Mathlib.FieldTheory.Galois"
+    ],
+    "order": [
+      "Mathlib.Order.Lattice",
+      "Mathlib.Order"
+    ],
+    "preorder": [
+      "Mathlib.Order.Preorder",
+      "Mathlib.Order"
+    ],
+    "archimedean": [
+      "Mathlib.Algebra.Order.Archimedean"
+    ],
+    "seq": [
+      "Mathlib.Data.Seq",
+      "Mathlib.Data.List"
+    ],
+    "fintype": [
+      "Mathlib.Data.Fintype"
+    ],
+    "finset": [
+      "Mathlib.Data.Finset"
+    ],
+    "tuple": [
+      "Mathlib.Data.Vector",
+      "Mathlib.Data.Fin.Tuple"
+    ],
+    "eqtype": [
+      "Mathlib.Logic.Equiv",
+      "Mathlib.Data.Subtype"
+    ],
+    "choice": [
+      "Mathlib.Logic.Classical",
+      "Mathlib.Order.Zorn"
+    ],
+    "path": [
+      "Mathlib.Combinatorics.SimpleGraph",
+      "Mathlib.Topology.Path"
+    ],
+    "fingraph": [
+      "Mathlib.Combinatorics.SimpleGraph"
+    ],
+    "div": [
+      "Mathlib.Data.Nat.Div",
+      "Mathlib.Data.Int.Div"
+    ],
+    "finfun": [
+      "Mathlib.Data.PiFin",
+      "Mathlib.Data.Fin"
+    ],
+    "ssrbool": [
+      "Mathlib.Data.Bool"
+    ],
+    "ssrfun": [
+      "Mathlib.Logic.Function"
+    ],
+    "classfun": [
+      "Mathlib.RepresentationTheory"
+    ]
+  },
+  "gold_v2": {
+    "sylow": [
+      "Mathlib.GroupTheory.Sylow"
+    ],
+    "nilpotent": [
+      "Mathlib.GroupTheory.Nilpotent"
+    ],
+    "cyclic": [
+      "Mathlib.GroupTheory.SpecificGroups.Cyclic"
+    ],
+    "perm": [
+      "Mathlib.GroupTheory.Perm"
+    ],
+    "abelian": [
+      "Mathlib.GroupTheory.Abelianization",
+      "Mathlib.GroupTheory.AbelianGroup"
+    ],
+    "commutator": [
+      "Mathlib.GroupTheory.Commutator"
+    ],
+    "center": [
+      "Mathlib.GroupTheory.Subgroup.Center"
+    ],
+    "quotient": [
+      "Mathlib.GroupTheory.QuotientGroup",
+      "Mathlib.GroupTheory.Coset",
+      "Mathlib.GroupTheory.GroupAction.Quotient"
+    ],
+    "action": [
+      "Mathlib.GroupTheory.GroupAction"
+    ],
+    "fingroup": [
+      "Mathlib.GroupTheory"
+    ],
+    "morphism": [
+      "Mathlib.GroupTheory.GroupHom",
+      "Mathlib.GroupTheory.Subgroup"
+    ],
+    "automorphism": [
+      "Mathlib.GroupTheory.Aut",
+      "Mathlib.GroupTheory.Subgroup"
+    ],
+    "pgroup": [
+      "Mathlib.GroupTheory.PGroup"
+    ],
+    "gproduct": [
+      "Mathlib.GroupTheory.SemidirectProduct",
+      "Mathlib.GroupTheory.DirectProduct"
+    ],
+    "gseries": [
+      "Mathlib.GroupTheory.Subgroup",
+      "Mathlib.GroupTheory.Series"
+    ],
+    "hall": [
+      "Mathlib.GroupTheory.Complement",
+      "Mathlib.GroupTheory.Solvable"
+    ],
+    "alt": [
+      "Mathlib.GroupTheory.SpecificGroups.Alternating"
+    ],
+    "presentation": [
+      "Mathlib.GroupTheory.PresentedGroup",
+      "Mathlib.GroupTheory.FreeGroup"
+    ],
+    "jordanholder": [
+      "Mathlib.Order.JordanHolder",
+      "Mathlib.GroupTheory.CompositionSeries"
+    ],
+    "burnside_app": [
+      "Mathlib.GroupTheory.GroupAction",
+      "Mathlib.GroupTheory.Burnside"
+    ],
+    "ssralg": [
+      "Mathlib.Algebra.Ring",
+      "Mathlib.Algebra.Group"
+    ],
+    "matrix": [
+      "Mathlib.LinearAlgebra.Matrix"
+    ],
+    "poly": [
+      "Mathlib.RingTheory.Polynomial",
+      "Mathlib.Algebra.Polynomial"
+    ],
+    "ring_quotient": [
+      "Mathlib.RingTheory.Ideal.Quotient"
+    ],
+    "intdiv": [
+      "Mathlib.Data.Int.Div",
+      "Mathlib.Data.Int"
+    ],
+    "bigop": [
+      "Mathlib.Algebra.BigOperators"
+    ],
+    "ssrnat": [
+      "Mathlib.Data.Nat"
+    ],
+    "ssrint": [
+      "Mathlib.Data.Int"
+    ],
+    "rat": [
+      "Mathlib.Data.Rat"
+    ],
+    "prime": [
+      "Mathlib.Data.Nat.Prime",
+      "Mathlib.Data.List.Prime"
+    ],
+    "zmodp": [
+      "Mathlib.Data.ZMod",
+      "Mathlib.Algebra.Field.ZMod",
+      "Mathlib.Algebra.ZMod",
+      "Mathlib.RingTheory.ZMod"
+    ],
+    "fraction": [
+      "Mathlib.RingTheory.Localization.FractionRing"
+    ],
+    "binomial": [
+      "Mathlib.Data.Nat.Choose"
+    ],
+    "mxpoly": [
+      "Mathlib.LinearAlgebra.Matrix.Polynomial",
+      "Mathlib.LinearAlgebra.Matrix.Charpoly"
+    ],
+    "mxalgebra": [
+      "Mathlib.LinearAlgebra.Matrix"
+    ],
+    "vector": [
+      "Mathlib.LinearAlgebra"
+    ],
+    "sesquilinear": [
+      "Mathlib.LinearAlgebra.SesquilinearForm"
+    ],
+    "mxrepresentation": [
+      "Mathlib.RepresentationTheory"
+    ],
+    "character": [
+      "Mathlib.RepresentationTheory.Character"
+    ],
+    "vcharacter": [
+      "Mathlib.RepresentationTheory.Character"
+    ],
+    "separable": [
+      "Mathlib.FieldTheory.Separable"
+    ],
+    "galois": [
+      "Mathlib.FieldTheory.Galois",
+      "Mathlib.FieldTheory.Finite.GaloisField"
+    ],
+    "algC": [
+      "Mathlib.FieldTheory.IsAlgClosed"
+    ],
+    "cyclotomic": [
+      "Mathlib.NumberTheory.Cyclotomic",
+      "Mathlib.RingTheory.Polynomial.Cyclotomic"
+    ],
+    "fieldext": [
+      "Mathlib.FieldTheory.Extension"
+    ],
+    "finfield": [
+      "Mathlib.FieldTheory.Finite",
+      "Mathlib.FieldTheory.Galois"
+    ],
+    "order": [
+      "Mathlib.Order.Lattice",
+      "Mathlib.Order"
+    ],
+    "preorder": [
+      "Mathlib.Order.Preorder",
+      "Mathlib.Order"
+    ],
+    "archimedean": [
+      "Mathlib.Algebra.Order.Archimedean"
+    ],
+    "seq": [
+      "Mathlib.Data.Seq",
+      "Mathlib.Data.List"
+    ],
+    "fintype": [
+      "Mathlib.Data.Fintype"
+    ],
+    "finset": [
+      "Mathlib.Data.Finset"
+    ],
+    "tuple": [
+      "Mathlib.Data.Vector",
+      "Mathlib.Data.Fin.Tuple"
+    ],
+    "eqtype": [
+      "Mathlib.Logic.Equiv",
+      "Mathlib.Data.Subtype"
+    ],
+    "choice": [
+      "Mathlib.Logic.Classical",
+      "Mathlib.Order.Zorn"
+    ],
+    "path": [
+      "Mathlib.Combinatorics.SimpleGraph",
+      "Mathlib.Topology.Path"
+    ],
+    "fingraph": [
+      "Mathlib.Combinatorics.SimpleGraph"
+    ],
+    "div": [
+      "Mathlib.Data.Nat.Div",
+      "Mathlib.Data.Int.Div"
+    ],
+    "finfun": [
+      "Mathlib.Data.PiFin",
+      "Mathlib.Data.Fin"
+    ],
+    "ssrbool": [
+      "Mathlib.Data.Bool"
+    ],
+    "ssrfun": [
+      "Mathlib.Logic.Function"
+    ],
+    "classfun": [
+      "Mathlib.RepresentationTheory"
+    ]
+  },
+  "audit_decisions": {
+    "abelian": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "FreeAbelianGroup is about the FREE abelian group on a type, defined as the abelianisation of the free group. MathComp's `abelian` module concerns general abelianisation theory and properties of abelian groups in finite group theory. These are related but the free abelian group is a specific construction distinct from the general abelian group theory."
+    },
+    "automorphism": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "Coset.Basic covers left and right cosets. MathComp's `automorphism` module is about group automorphisms. No conceptual connection."
+    },
+    "bigop": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "Data.Finset.Sum is one specific operation over finsets. MathComp's `bigop` is the complete general-purpose big-operator library covering \u2211, \u220f, bigmax, bigmin over arbitrary commutative structures. The primary Mathlib analogue is Mathlib.Algebra.BigOperators, which is absent from the top-10 candidates because bigop's name/text signal overlaps more with finset operations than with the BigOperators namespace."
+    },
+    "div": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "Digits.Div covers divisibility tests BASED ON DIGIT REPRESENTATIONS (e.g., a number is divisible by 9 iff its digit sum is). MathComp's `div` is the general Euclidean division algorithm for naturals. Conceptually unrelated despite sharing the word 'div'."
+    },
+    "eqtype": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "TypeVec is about type-indexed product families and is used in categorical constructions (QPF). MathComp's `eqtype` defines the decidable equality interface (eqType typeclass) used throughout SSReflect. These are completely unrelated."
+    },
+    "fingraph": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "Order.Preorder.Finite is about finitely-many-element preorders. MathComp's `fingraph` defines finite graph connectivity (dfs, connect, the `connect` relation). The correct match is Mathlib.Combinatorics.SimpleGraph but no SimpleGraph module appears in the top-10 candidates."
+    },
+    "finset": {
+      "verdict": "AMBIGUOUS",
+      "reasoning": "Finite.Set proves lemmas relating Finset and (set-theoretic) Set types. MathComp's `finset` defines finsets as the primary finite-set data structure. Finite.Set IS about finsets but is an adapter module; the primary finset library is Data.Finset. The match is mathematically adjacent but not the canonical answer. Marked AMBIGUOUS because Finite.Set does discuss finsets explicitly."
+    },
+    "fraction": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "FrobeniusFractionField is a deep module about the Frobenius endomorphism on the fraction field of the Witt vectors W(k). MathComp's `fraction` is the general fraction field library (Localization, FractionRing). Conceptually distant; the correct match (RingTheory.Localization.FractionRing) is at rank 7 in base scoring."
+    },
+    "gseries": {
+      "verdict": "AMBIGUOUS",
+      "reasoning": "IsSubnormal defines subnormal subgroups \u2014 a subgroup H is subnormal in G iff there exists a subnormal series from H to G. MathComp's `gseries` defines composition series, chief series, and the general gseries construction. The match is not ideal (series vs subnormality property) but is mathematically adjacent. Marked AMBIGUOUS."
+    },
+    "intdiv": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "MonoidAlgebra.Division covers division of polynomials / multivariate polynomials (monoid algebras) by monomials. MathComp's `intdiv` provides Euclidean division for integers (`divz`, `modz`, `dvdz`). Entirely different content despite sharing 'division' vocabulary."
+    },
+    "morphism": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "Coset.Card is about cardinality of cosets (index of a subgroup). MathComp's `morphism` is the group morphism library. No match."
+    },
+    "path": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "Data.List.Cycle models cyclic ROTATIONS of lists. MathComp's `path` defines relational paths and cycles in directed graphs: `path p x s` is a list s such that consecutive elements satisfy relation p starting from x. The Mathlib analogue is SimpleGraph.Walk. Data.List.Cycle coincidentally overlaps on 'cycle' but is unrelated."
+    },
+    "prime": {
+      "verdict": "FALSE_ERROR",
+      "reasoning": "Data.List.Prime docstring: 'Products of lists of prime elements. This file contains theorems relating products of lists of prime elements and products of squarefree numbers.' This IS about prime factorization: it defines and studies lists whose elements are prime, exactly what MathComp's `prime` module covers (primality, prime factorization, unique factorization). The gold prefix `Mathlib.Data.Nat.Prime` was too narrow; `Mathlib.Data.List.Prime` is a valid co-equal match. Adding `Mathlib.Data.List.Prime` to gold_v2."
+    },
+    "quotient": {
+      "verdict": "FALSE_ERROR",
+      "reasoning": "GroupAction.Quotient docstring: 'Properties of group actions involving quotient groups. This file proves properties of group actions which use the quotient group structure.' This file is EXPLICITLY about quotient groups \u2014 it is the group-action perspective on G/N. MathComp's `quotient` module defines the quotient group G/N and its properties. The match is genuine: both files are about quotient groups. Gold_v1 was too narrow by accepting only QuotientGroup.* and Coset.* but not GroupAction.Quotient. Adding `Mathlib.GroupTheory.GroupAction.Quotient` to gold_v2."
+    },
+    "rat": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "NumberTheory.Cyclotomic.Rat has no docstring (empty). Inspecting the module, it provides specific results about cyclotomic polynomials evaluated over the rationals \u2014 a highly specialized topic. MathComp's `rat` module is the rational number library (arithmetic, order, floor/ceil). Cyclotomic.Rat is not a match despite containing 'Rat' in its path."
+    },
+    "ring_quotient": {
+      "verdict": "AMBIGUOUS",
+      "reasoning": "LocalRing.Quotient docstring: 'We gather results about the quotients of local rings.' MathComp's `ring_quotient` is: 'Quotient rings by an ideal'. A quotient of a local ring IS a quotient ring (by an ideal). The match is semantically adjacent but covers a MORE SPECIFIC case (local rings) rather than the general ideal quotient. Marked AMBIGUOUS; the primary canonical match remains RingTheory.Ideal.Quotient."
+    },
+    "ssrint": {
+      "verdict": "CONFIRMED_ERROR",
+      "reasoning": "RingTheory.Int.Basic covers divisibility over \u2124 using ring-theoretic methods. MathComp's `ssrint` is the complete integer library: arithmetic (`addz`, `mulz`, `absz`), ordering, divisibility, GCD, and the `int` type itself. The primary Mathlib match is Data.Int, which provides the integer type and basic operations. RingTheory.Int.Basic is a secondary, specialized module."
+    },
+    "zmodp": {
+      "verdict": "FALSE_ERROR",
+      "reasoning": "Algebra.Field.ZMod docstring: 'is a field'. Specifically, it proves that \u2124/p\u2124 is a field for prime p. MathComp's `zmodp` module is defined as: 'Z/pZ is a field when p is prime'. These two modules have IDENTICAL mathematical content. Gold_v1 only accepted `Mathlib.Data.ZMod` (the type definition), missing the fact that Algebra.Field.ZMod is the precise analogue of the `zmodp` module. Adding `Mathlib.Algebra.Field.ZMod`, `Mathlib.Algebra.ZMod`, and `Mathlib.RingTheory.ZMod` to gold_v2."
+    }
+  }
+}

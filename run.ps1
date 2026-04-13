@@ -38,4 +38,18 @@ python src/rerank_candidates_v3.py
 python src/visualize_v3_2.py
 python .ai/evaluate_v3_2.py
 
+Write-Host "=== Step 8: Deliverable 4 — declaration-name matching ==="
+python src/scrape_mathcomp_declarations.py
+python src/declaration_similarity.py
+python src/rerank_candidates_v4.py
+python src/evaluate_d4.py
+python src/visualize_d4.py
+
+Write-Host "=== Step 9: Deliverable 4.1 — gold audit + hierarchical matching ==="
+python src/audit_gold_standard.py
+python src/hierarchical_matching.py
+python src/rerank_candidates_v4_1.py
+python src/evaluate_d4_1.py
+python src/visualize_d4_1.py
+
 Write-Host "=== Done! Check outputs/ ==="

@@ -37,3 +37,6 @@ data/raw/mathcomp_html/
 
 # Cached Lean source files (large, reproducible)
 data/raw/mathlib_lean_cache/
+
+# Cached MathComp .v source files (large, reproducible)
+data/raw/mathcomp_v_cache/
